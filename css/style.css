@@ -45,31 +45,14 @@ section{
     height: 20rem;
 }
 
-.contact .max-contact .contact-content{
+.about, .gourmetizacao{
     background-color: #9A5328;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
 }
-.about{
-    background-color: #9A5328;
-    width: 100%;
-}
-.about-title{
-    width: 100%;
-}
-.about-title h1{
-    font-family: 'Dancing Script', cursive;
-    font-weight: 500;
-    color: #201203;
-    font-size: 4rem;
-    text-align: center;
-}
-.about-content{
+.about-content, .gourmetizacao-content{
     padding: 1rem;
     width: 100%;
 }
-.about-content p{
+.about-content p, .gourmetizacao-content p{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     color: #D4C5B9;
@@ -77,12 +60,36 @@ section{
     text-align: justify;
 }
 
-.about, .contact{
+.about, .contact, .gourmetizacao, .panorama, .valor{
     padding: 3rem 6rem;
 }
 
+.title h1{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+    font-size: 4rem;
+    color: #201203;
+    text-align: center;
+}
+
+.panorama, .valor{
+    background-color: #d4c5b9;
+}
+
+.panorama-content, .valor-content{
+    padding: 1rem;
+    width: 100%;
+}
+.panorama-content p, .valor-content p{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: #201203;
+    font-size: 1rem;
+    text-align: justify;
+}
+
 .contact{
-    background-color: #D4C5B9;
+    background-color: #9A5328;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,12 +105,6 @@ section{
     align-items: center;
     padding: 1rem 0;
 }
-.contact-title h1{
-    font-family: 'Dancing Script', cursive;
-    font-weight: 500;
-    color: #9A5328;
-    font-size: 4rem;
-}
 .contact-content{
     display: flex;
     padding: 1rem;
@@ -111,9 +112,11 @@ section{
     flex-wrap: wrap;
     width: auto;
     justify-content: center;
+    background-color: #D4C5B9;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
-    background: rgba(255, 255, 255, 0.2);
     height: auto;
+    
+    align-items: center;
 }
 .contact .contact-content .person{
     width: calc(16% - 10px);

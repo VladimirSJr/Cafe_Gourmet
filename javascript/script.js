@@ -12,9 +12,5 @@ $(document).ready(function(){
     })
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop:0})
-    })    
-    var typed = new Typed(".typing", {
-        strings:["Gourmet"],
-        typeSpeed:150
     })
 });

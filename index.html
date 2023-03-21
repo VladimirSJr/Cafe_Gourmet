@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Café Gourmet</title>
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/cabe_roda.css">
+		<link rel="stylesheet" href="css/header-footer.css">
 		<link rel="stylesheet" href="css/dataAnime.css">
 		<link rel="shortcut icon" href="Images/coffee_logo.png" type="image/x-icon">
 	</head>
@@ -18,34 +18,55 @@
 			<a href="#"><img src="Images/coffee_logo.png" alt="Logo"></a>
 			<nav id="nav-menu">
 				<ul id="menu" role="menu">
-					<li><a id="link" href="index.html">Home</a></li>
-					<li><a id="link" href="producao.html">Produção</a></li>
-					<li><a id="link" href="industrializacao.html">Insdustrialização</a></li>
-					<li><a id="link" href="valor.html">Cadeia global de valor</a></li>
+					<li><a id="link" href="#home">Home</a></li>
+					<li><a id="link" href="#about">Sobre</a></li>
+					<li><a id="link" href="#Panorama">Panorama</a></li>
+					<li><a id="link" href="#gourmetizacao">Gourmetização</a></li>
+					<li><a id="link" href="#valor">Cadeia Global de Valor</a></li>
+					<li><a id="link" href="#contact">Contato</a></li>
 				</ul>
 				<button id="menu-btn" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><span id="hamburger"></span></button>
 			</nav>
 		</header>
-		<section class="landing-page">
+		<section class="landing-page" id="home">
 			<div class="landing-title" data-anime="left">
-				<h1>Café <span class="typing"></span></h1>
+				<h1>Café <span class="typing">Gourmet</span></h1>
 				<p>Gourmetização do café: competitividade às empresas brasileiras em uma cadeia global de valor</p>
 			</div>
 			<div class="coffeeCup" data-anime="right">
 				<img src="Images/coffee_cup.png" alt="Coffee Cup">
 			</div>
 		</section>
-		<section class="about">
-			<div class="about-title" data-anime="left">
+		<section class="about" id="about">
+			<div class="title" data-anime="top">
 				<h1>Sobre</h1>
 			</div>
-			<div class="about-content" data-anime="top">
+			<div class="about-content" data-anime="left">
 				<p>O tema abordado, café gourmet, tem como fonte o trabalho de gradução (TG) e sua forma apresentada no V Encontro Internacional de Gestão, Desenvolvimento e Inovação (EIGEDIN) - edição online - criados pelos integrantes citados abaixo, assim como seus contatos. Foram abordadas as características sobre café gourmet, produção, industrialização e como agregar valor ao café numa cadeia global de valor.</p>
+			</div>
+		</section>
+		<section class="panorama" id="panorama">
+			<div class="title" data-anime="top"><h1>Panorama do Setor Cafeeiro Brasileiro</h1></div>
+			<div class="panorama-content" data-anime="right">
+				<p>Segundo a Associação Brasileira da Indústria de Café, ABIC (2020a), o Brasil é o maior produtor há mais de 150 anos, sendo o maior exportador mundial de café e se posiciona em segundo lugar entre os países que mais consomem o produto. Conforme The Observatory of Economic Complexity, OEC (2020), o Brasil detinha cerca de 15,7% do mercado internacional de café em 2019 e, segundo CECAFE (2020), seus cinco principais destinos foram: EUA com 19,4%, Alemanha com 16,7%, Itália com 8,8%, Japão com 6,4% e Bélgica com 6,2% (CECAFÉ, 2019).</p>
+			</div>
+		</section>
+		<section class="gourmetizacao" id="gourmetizacao">
+			<div class="title" data-anime="top"><h1>Gourmetização do Café</h1></div>
+			<div class="gourmetizacao-content" data-anime="left">
+				<p>De acordo com Boaventura et al. (2018, p. 255), a barista chamada Trish Skeie foi quem descreveu a evolução do café como um movimento caracterizado por “ondas de consumo”, no qual “as ondas coexistentes têm filosofias e propriedades diferentes, e oferecem diversas experiências de consumo para consumidores-alvo distintos”. Dito isso, percebeu-se três ondas de tal movimento cada uma com atributos diferenciados. A primeira onda está associada ao consumo em larga escala, pelo produto em commodities, e por sua qualidade inferior. Já a segunda, destaca-se pelo início dos cafés especiais no mercado e o consumo doméstico dos produtos em cápsulas. A terceira é denominada de revolução devido às inúmeras mudanças, uma delas é a complexidade artesanal dada ao café comparada com o vinho.</p>
+			</div>
+		</section>
+		<section class="valor" id="valor">
+			<div class="title" data-anime="top"><h1>Cadeia Global de Valor</h1></div>
+			<div class="valor-content" data-anime="right">
+				<p>Nas últimas décadas, a divisão da produção em escala internacional sofreu alterações profundas que convergiu a uma integração da produção industrial de caráter específico, “da qual os conceitos de cadeias produtivas e, ainda mais propriamente, de cadeias globais de valor, busca dar conta” (SCHERER, 2020, p. 76).
+				Em concordância com a definição de cadeia de valor por Michael Porter, Meneghini (2019) ressalta a diferença entre ela, a produção fragmentada e a cadeia global de valor. Nota-se então esta divisão em diferentes níveis de envolvimento com o mercado externo, onde a fragmentação vem a ser a divisão da produção entre países e firmas, e CGV (Cadeia Global de Valor) como as redes de produção fragmentada sob uma estrutura de governança que coordena seu funcionamento (MENEGHINI, 2019, p. 23).</p>
 			</div>
 		</section>
 		<section class="contact" id="contact">
 			<div class="max-contact">
-				<div class="contact-title" data-anime="top">
+				<div class="title" data-anime="top">
 					<h1>Contato</h1>
 				</div>
 				<div class="contact-content" data-anime="bottom">
@@ -103,7 +124,6 @@
 		</footer>
 		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 		<script src="javascript/animeScroll.js"></script>
 		<script src="javascript/script.js"></script>
 		<script src="javascript/menu.js"></script>
