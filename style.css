@@ -15,16 +15,10 @@ html{
     transition: .4s;
 }
 [data-anime="top"]{
-    transform: translate3d(0, -25px, 0);
+    transform: translate3d(0, -1.5rem, 0);
 }
 [data-anime="bottom"]{
-    transform: translate3d(0, 25px, 0);
-}
-[data-anime="left"]{
-    transform: translate3d(-25px, 0, 0);
-}
-[data-anime="right"]{
-    transform: translate3d(25px, 0, 0);
+    transform: translate3d(0, 1.5rem, 0);
 }
 [data-anime].animate{
     opacity: 1;
@@ -47,7 +41,7 @@ header img{
 }
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 nav li{
     display: inline-block;
@@ -95,7 +89,7 @@ nav a:hover{
 }
 .scroll-up-btn ion-icon{
     color: #D4C5B9;
-    background-color: #9A5328; 
+    background-color: #201203; 
     width: 100%;
     height: 100%;
     border-radius: 40%;
@@ -158,6 +152,8 @@ section{
     color: #D4C5B9;
     font-size: 1rem;
     text-align: justify;
+    text-indent: 2rem;
+    line-height: 1.5rem;
 }
 
 .about, .contact, .gourmetizacao, .panorama, .valor{
@@ -186,6 +182,44 @@ section{
     color: #201203;
     font-size: 1rem;
     text-align: justify;
+    text-indent: 2rem;
+    line-height: 1.5rem;
+}
+.panorama .panorama-content .table{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.panorama .panorama-content .table .quadro{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+.panorama .panorama-content .table .quadro table{
+    width: 100%;
+    border: #201203 solid .1rem;
+}
+.panorama .panorama-content .table .quadro table th, td{
+    border: #201203 solid .1rem;
+    padding: .2rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.panorama .panorama-content .table .quadro table .td-information{
+    text-align: center;
+}
+.panorama .panorama-content .table h5{
+    width: 100%;
+    font-weight: normal;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: .9rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+.panorama .panorama-content .table h5 span{
+    font-weight: bold;
 }
 
 .contact{
@@ -377,6 +411,30 @@ footer p a:hover{
     .landing-page{
         padding: 0 6rem;
     }
+    .panorama .panorama-content .table .quadro{
+        padding: .5rem;
+    }
+    .panorama .panorama-content .table .quadro table{
+        font-size: .8rem;
+    }
+    .panorama .panorama-content .table .quadro table th, td{
+        padding: .1rem;
+    }
+    .title h1{
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width:730px){
+    #lastP{
+        display: none;
+    }
+    .panorama .panorama-content .table{
+        display: none;
+    }
+    .about, .contact, .gourmetizacao, .panorama, .valor{
+        padding: 2rem 3rem;
+    }
 }
 
 @media (max-width:580px){
@@ -401,6 +459,15 @@ footer p a:hover{
     footer p a{
         font-size: 1rem;
     }
+    .title h1{
+        font-size: 3rem;
+    }
+    .about-content p, .gourmetizacao-content p, .panorama-content p, .valor-content p{
+        font-size: .8rem;
+    }
+    .picture p{
+        font-size: .8rem;
+    }
 }
 
 @media (max-width:500px){
@@ -423,13 +490,46 @@ footer p a:hover{
     .about-title h1, .contact-title h1{
         font-size: 3rem;
     }
-    .about-content p, .contact-title p{
-        font-size: .9rem;
+    .about-content p, .gourmetizacao-content p, .panorama-content p, .valor-content p{
+        font-size: .7rem;
     }
     footer p{
         font-size: .9rem;;
     }
     footer p a{
         font-size: .9rem;
+    }
+}
+
+@media (max-width:450px){
+    .about, .contact, .gourmetizacao, .panorama, .valor{
+        padding: 1rem .5rem;
+    }
+    .landing-page{
+        padding: 0 .5rem;
+    }
+    .landing-page .landing-title h1{
+        font-size: 2rem;
+    }
+    .landing-page .landing-title h1 span{
+        font-size: 2.5rem;
+    }
+    .landing-page .landing-title p{
+        font-size: .7rem;
+    }
+    .about-title h1, .contact-title h1{
+        font-size: .5rem;
+    }
+    footer p{
+        font-size: .6rem;;
+    }
+    footer p a{
+        font-size: .6rem;
+    }
+    .title h1{
+        font-size: 2rem;
+    }
+    .picture p{
+        font-size: .7rem;
     }
 }
