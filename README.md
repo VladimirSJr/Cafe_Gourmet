@@ -1,6 +1,7 @@
 <div align="center"><h1>Café Gourmet</h1></div>
 
 <div align="center">
+  <p>Desenvolvido com a intenção de praticar a criação de um site utilizando HTML5, CSS3 e Javascript. O tema é um trabalho de graduação que desenvolvi junto a outros alunos mencionados no página.</p>
   <p>Desenvolvido utilizando:</p>
   <img src= "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
   <img src= "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
