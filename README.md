@@ -9,4 +9,4 @@
   <br><a href="https://vladimirsjr.github.io/cafeGourmet/" target="_blank">Acessar</a>
 </div>
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=a9081c&height=120&section=footer"/>
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=DFEBF6&height=120&section=footer"/>
